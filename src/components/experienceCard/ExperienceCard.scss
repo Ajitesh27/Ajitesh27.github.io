@@ -75,6 +75,7 @@
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  font-style: italic;
 }
 
 .experience-roundedimg {
@@ -104,12 +105,14 @@
   color: $textColorDark !important;
 }
 .experience-text-date {
-  text-align: center;
+  text-align: left;
   color: $textColor;
   font-size: 20px;
   margin: 0px;
   padding-top: 1rem;
-  font-weight: 600;
+  font-weight: 60;
+  font-style: italic;
+  white-space: pre-wrap;
 }
 
 .experience-text-desc {

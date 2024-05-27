@@ -128,10 +128,12 @@ const educationInfo = {
       logo: require("./assets/images/uiucLogo.jpg"),
       subHeader: "Masters in Computer Science",
       duration: "January 2024 - May 2025",
-      desc: "Participated in the research of XXX and published 3 papers.",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      ],
+      courses: [
+        "Database Systems", "Advanced topics in Software Engineering", "Artificial Intelligence", "Distributed Systems"
       ]
     },
     {
@@ -139,8 +141,11 @@ const educationInfo = {
       logo: require("./assets/images/pesuLogo.png"),
       subHeader: "Bachelor of Technology in Computer Science and Engineering",
       duration: "August 2018 - May 2022",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"],
+      courses: [
+        "Artificial Intelligence",
+        "Machine Learning",
+      ]
     }
   ]
 };
@@ -151,16 +156,16 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "Backend", //Insert stack or technology you have experience in
+      progressPercentage: "95%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Programming",
-      progressPercentage: "60%"
+      progressPercentage: "90%"
+    },
+    {
+      Stack: "Data Engineering",
+      progressPercentage: "85%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -175,27 +180,35 @@ const workExperiences = {
       role: "Software Engineer",
       company: "Akamai Technologies",
       companylogo: require("./assets/images/akamaiLogo.png"),
-      date: "June 2018 – Present          .  Jan 2022",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      date: "                                    Summer Intern                       May 2024 - Aug 2024 ( 3 Months )                               California, US\n                                 Software Engineer                     July 2022 - Dec 2023 ( 1.5 Years )                                 Bangalore, IN\n                      Software Engineering Intern            Jan 2022 - June 2022 ( 6 Months )                              Bangalore, IN",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+       "Developed a new version of a product ( Kafka -> S3 ) that reduced memory usage by 50% and increased throughput by 12 times.",
+       "Developed various tools and APIs to create and manage AWS / Linode Instances / Volumes / Disks, handle customer migrations, CRUD operations on Cassandra, automatically create Athena Partitions, manage customer events, etc.",
+       "Created a Golang library to interact with SaltStack to manage clusters remotely enabling Linode to emulate AWS Opsworks.",
+        "Dockerized several projects and migrated them to Kubernetes by creating helm charts and designing Jenkins pipelines to build and deploy images.",
+        "Leveraged knowledge in Go, Python, REST APIs, Kubernetes, Big Data, Jenkins, Salt, Kafka, Consul, etc."
       ]
     },
     {
-      role: "Front-End Developer",
+      role: "Software Development Intern",
       company: "Autodesk",
       companylogo: require("./assets/images/autodeskLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
+      date: "                           July 2021 - Dec 2021 ( 6 Months )                                                                      Bangalore, IN",
+      descBullets: [
+        "Worked on the development of a new “Read-Only for Me” feature for the flagship Fusion 360 product.",
+        "Created automations to monitor regressions and fixed them, Upgraded UI elements, and optimized several workflows.",
+        "Leveraged knowledge in C++, Git, OOPS, Data Models, Agile Development, Jira, CAD, Testing, etc."
+      ]},
     {
-      role: "Software Engineer Intern",
+      role: "Product Development Intern",
       company: "nSmiles",
       companylogo: require("./assets/images/nsmilesLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
+      date: "                           Jan 2021 - Jun 2021 ( 6 Months )                                                                      Bangalore, IN",
+      descBullets: [
+        'Leader of the "AI-based Career Counseling with Chatbots” project.',
+        "Designed and created a chatbot. Incorporated features like Real-time score updation, Automatic Email generation, etc.",
+        "Leveraged knowledge in RASA, Python, REST API, Machine Learning, HTML, CSS, Javascript, etc."
+      ]},
   ]
 };
 
@@ -363,7 +376,7 @@ const resumeSection = {
   subtitle: "Feel free to download my resume",
 
   // Please Provide with Your Podcast embeded Link
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {

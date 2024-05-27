@@ -60,10 +60,19 @@ export default function EducationCard({school}) {
                   <GetDescBullets descBullets={school.descBullets} />
                 </ul>
               </div>
+              <div>
+                <h3 style={{margin:0}}>Courses</h3>
+                <div className="scrolling-list">
+                  {school.courses.map((course, index) => (
+                    <p className="education-text-desc" key={index}>{course}</p>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </Fade>
+      
       <Slide left duration={2000}>
         <div className="education-card-border"></div>
       </Slide>
