@@ -124,13 +124,13 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "University of Illinois at Urbana-Champaign",
+      schoolName: "University of Illinois Urbana-Champaign",
       logo: require("./assets/images/uiucLogo.jpg"),
-      subHeader: "Masters in Computer Science",
+      subHeader: "Masters in Computer Science                                                                                             GPA :   4.0 / 4.0",
       duration: "January 2024 - May 2025",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Member of the Association for Computing Machinery (ACM)",
+        "Top 5 - Code in the Dark, Hack Illinois 2024"
       ],
       courses: [
         "Database Systems", "Advanced topics in Software Engineering", "Artificial Intelligence", "Distributed Systems"
@@ -139,17 +139,32 @@ const educationInfo = {
     {
       schoolName: "PES University",
       logo: require("./assets/images/pesuLogo.png"),
-      subHeader: "Bachelor of Technology in Computer Science and Engineering",
+      subHeader: "Bachelor of Technology in Computer Science and Engineering                              GPA :   8.86 / 10.0",
       duration: "August 2018 - May 2022",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"],
+      descBullets: [
+        "Specialization in Machine Intelligence and Data Science",
+        "Minors in Electronics and Communication Engineering",
+        "Received scholarships 7 times in 8 semesters for being in the top 20% of the university"
+      ],
       courses: [
-        "Artificial Intelligence",
+        "Python",
+        "C",
+        "Design and Analysis of Algorithms",
+        "Data Structures",
+        "Cloud Computing",
+        "Big Data",
+        "Operating Systems",
+        "Computer Networks",
+        "Object Oriented Programming",
         "Machine Learning",
+        "Data Analytics",
+        "Natural Language Processing",
+        "Database Management Systems",
       ]
     }
   ]
 };
-
+// TODO: All courses not scrolling
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
