@@ -1,12 +1,14 @@
-import React, {createRef, useContext} from "react";
-import {Fade, Slide} from "react-reveal";
+import React, { useEffect, useRef, useContext } from "react";
+import { Fade, Slide } from "react-reveal";
 import "./EducationCard.scss";
 import StyleContext from "../../contexts/StyleContext";
 
-export default function EducationCard({school}) {
-  const imgRef = createRef();
+export default function EducationCard({ school }) {
+  const imgRef = useRef(null);
+  const scrollingListRef = useRef(null);
+  const { isDark } = useContext(StyleContext);
 
-  const GetDescBullets = ({descBullets}) => {
+  const GetDescBullets = ({ descBullets }) => {
     return descBullets
       ? descBullets.map((item, i) => (
           <li key={i} className="subTitle">
@@ -15,10 +17,22 @@ export default function EducationCard({school}) {
         ))
       : null;
   };
-  const {isDark} = useContext(StyleContext);
+
+  useEffect(() => {
+    const scrollingList = scrollingListRef.current;
+    if (scrollingList) {
+      const listItems = scrollingList.innerHTML;
+      scrollingList.innerHTML += listItems; // Duplicate the list items
+      // Set the correct width for the seamless effect
+      scrollingList.style.width = `${scrollingList.scrollWidth / 2}px`;
+    }
+  }, []);
 
   if (!school.logo)
     console.error(`Image of ${school.name} is missing in education section`);
+
+  const scrollingListClassName = school.courses.length > 10 ? "scrolling-list-2" : "scrolling-list";
+
   return (
     <div>
       <Fade left duration={1000}>
@@ -61,18 +75,22 @@ export default function EducationCard({school}) {
                 </ul>
               </div>
               <div>
-                <h3 style={{margin:0}}>Courses</h3>
-                <div className="scrolling-list">
-                  {school.courses.map((course, index) => (
-                    <p className="education-text-desc" key={index}>{course}</p>
-                  ))}
+                <h3 style={{ margin: 0 }}>Courses</h3>
+                <div className="scrolling-wrapper">
+                  <div className={scrollingListClassName} ref={scrollingListRef}>
+                    {school.courses.map((course, index) => (
+                      <p className="education-text-desc" key={index}>
+                        {course}
+                      </p>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </Fade>
-      
+
       <Slide left duration={2000}>
         <div className="education-card-border"></div>
       </Slide>

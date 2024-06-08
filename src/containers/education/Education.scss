@@ -51,34 +51,56 @@
   }
 }
 @keyframes marquee {
-  0%   { transform: translateX(100%); }
+  0% { transform: translateX(0%); }
   100% { transform: translateX(-100%); }
 }
 
-.scrolling-list {
+.scrolling-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
 
-  width : 100%;
-  overflow:visible;
+.scrolling-list {
   display: flex;
-  flex-direction: row;
-  animation: marquee 15s linear infinite;
+  animation: marquee 20s linear infinite; /* Adjust duration as needed */
   white-space: nowrap;
   ::-webkit-scrollbar {
     display: none;
   }
 
-  /* Hide scrollbar for IE, Edge and Firefox */
+  /* Hide scrollbar for IE, Edge, and Firefox */
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
-
-
 
 .scrolling-list:hover {
   animation-play-state: paused;
 }
 
 .scrolling-list p {
+  display: inline-block;
   padding-right: 20px;
 }
 
+.scrolling-list-2 {
+  display: flex;
+  animation: marquee 45s linear infinite; /* Adjust duration as needed */
+  white-space: nowrap;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge, and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrolling-list-2:hover {
+  animation-play-state: paused;
+}
+
+.scrolling-list-2 p {
+  display: inline-block;
+  padding-right: 20px;
+}
