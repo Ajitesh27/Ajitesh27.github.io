@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Edit meta tags for SEO -->
-    <title>DeveloperFolio | Developer Portfolio Template</title>
-    <meta name="title" content="DeveloperFolio | Developer Portfolio Template">
-    <meta name="description" content="Software Developer Portfolio Template that helps you showcase your work and skills as a software developer">
+    <title>Ajitesh Nair | SWE | UIUC</title>
+    <meta name="title" content="Ajitesh Nair | SWE | UIUC">
+    <meta name="description" content="This is Ajitesh Nair's personal website that showcases his past experiences, education and skills">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://developerfolio.js.org/">
-    <meta property="og:title" content="DeveloperFolio | Developer Portfolio Template">
-    <meta property="og:description" content="Software Developer Portfolio Template that helps you showcase your work and skills as a software developer">
+    <meta property="og:url" content="https://ajitesh27.github.io/">
+    <meta property="og:title" content="Ajitesh Nair | SWE | UIUC">
+    <meta property="og:description" content="This is Ajitesh Nair's personal website that showcases his past experiences, education and skills">
     <!-- Link to a hosted image -->
     <!-- <meta property="og:image" content=""> -->
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://developerfolio.js.org/">
-    <meta property="twitter:title" content="DeveloperFolio | Developer Portfolio Template">
-    <meta property="twitter:description" content="Software Developer Portfolio Template that helps you showcase your work and skills as a software developer">
+    <meta property="twitter:url" content="https://ajitesh27.github.io/">
+    <meta property="twitter:title" content="Ajitesh Nair | SWE | UIUC">
+    <meta property="twitter:description" content="This is Ajitesh Nair's personal website that showcases his past experiences, education and skills">
     <!-- Link to a hosted image -->
     <!-- <meta property="twitter:image" content=""> -->
 
@@ -52,6 +52,31 @@
 
       gtag('config', 'UA-135618960-2');
     </script>
+
+<script>
+  var character = 2;
+  var msg = document.title + " | ";
+  var currentTitle = document.title;
+  function counter() {
+    counter.timer = setInterval(function() {
+      document.title = msg.substring(character, msg.length) + msg.substring(0, character);
+      character++;
+      if( character > msg.length){
+        character = 0;
+      }
+    }, 1);
+  }
+  function stop() {
+    clearInterval(counter.timer);
+  }
+  window.onblur = function() {
+    counter();
+  };
+  window.onfocus = function() {
+    stop();
+    document.title = currentTitle;
+  };
+  </script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.4/css/all.min.css">
 
