@@ -46,6 +46,16 @@ export default function GithubProfileCard({prof}) {
                 Open for opportunities: {prof.hireable}
               </span>
             </div>
+            <div className="opp-div">
+              <span className="desc-prof">
+                ACM: ajiteshn@acm.org
+              </span>
+            </div>
+            <div className="opp-div">
+              <span className="desc-prof">
+                UIUC: ajitesh4@illinois.edu
+              </span>
+            </div>
             <SocialMedia />
           </div>
           <div className="image-content-profile">

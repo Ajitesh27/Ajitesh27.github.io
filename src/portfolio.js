@@ -10,7 +10,7 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 const splashScreen = {
   enabled: true, // set false to disable splash screen
   animation: splashAnimation,
-  duration: 1000 // Set animation duration as per your animation
+  duration: 800 // Set animation duration as per your animation
 };
 
 // Summary And Greeting Section
@@ -23,7 +23,7 @@ const greeting = {
   username: "Ajitesh Nair",
   title: "Hi all, I'm Ajitesh",
   subTitle: emoji(
-    "Work in Progress.... Do not click on any links. A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Software Engineer 🚀 experienced in building large-scale applications using Python, Go, C, C++, and more."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1JOmwcLIohBcpCo9lR_G8eVpcEPtb7rvW/view?usp=sharing", // Set to empty to hide the button
@@ -47,14 +47,15 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "CRAZY SOFTWARE DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
+    "and many more...",
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Passionate about creating scalable and efficient cloud-based distributed systems."
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Proficient in building robust and efficient APIs for seamless service integration and communication."),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Skilled with Docker and Kubernetes for containerization and orchestration, developing, and monitoring large-scale applications."
     )
   ],
 
@@ -63,36 +64,32 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "python",
+      fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "c",
+      fontAwesomeClassname: "fab fa-c"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      skillName: "go",
+      fontAwesomeClassname: "fab fa-golang"
     },
     {
       skillName: "reactjs",
       fontAwesomeClassname: "fab fa-react"
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "html",
+      fontAwesomeClassname: "fab fa-html5"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "JavaScript",
+      fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "jenkins",
+      fontAwesomeClassname: "fab fa-jenkins"
     },
     {
       skillName: "sql-database",
@@ -103,12 +100,12 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      skillName: "linode",
+      fontAwesomeClassname: "fab fa-linode"
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "git",
+      fontAwesomeClassname: "fab fa-git"
     },
     {
       skillName: "docker",
@@ -139,7 +136,7 @@ const educationInfo = {
     {
       schoolName: "PES University",
       logo: require("./assets/images/pesuLogo.png"),
-      subHeader: "Bachelor of Technology in Computer Science and Engineering                              GPA :   8.86 / 10.0",
+      subHeader: "Bachelor of Technology in Computer Science and Engineering                             GPA :   8.86 / 10.0",
       duration: "August 2018 - May 2022",
       descBullets: [
         "Specialization in Machine Intelligence and Data Science",
