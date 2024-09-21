@@ -26,7 +26,7 @@ const greeting = {
     "A passionate Software Engineer 🚀 experienced in building large-scale applications using Python, Go, C, C++, and more."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1JOmwcLIohBcpCo9lR_G8eVpcEPtb7rvW/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1s27GKMkCQtfDEVb3cF7qfxJDwML_MMNi/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -127,10 +127,11 @@ const educationInfo = {
       duration: "January 2024 - May 2025",
       descBullets: [
         "Member of the Association for Computing Machinery (ACM)",
-        "Top 5 - Code in the Dark, Hack Illinois 2024"
+        "Top 5 - Code in the Dark, Hack Illinois 2024",
+        "CS Grad Teaching Assistant for 'Topics in Software Engineering'"
       ],
       courses: [
-        "Database Systems", "Advanced topics in Software Engineering", "Artificial Intelligence", "Distributed Systems"
+        "Database Systems", "Advanced topics in Software Engineering", "Artificial Intelligence", "Distributed Systems", "Data Mining", "Threat Detection"
       ]
     },
     {
@@ -198,6 +199,7 @@ const workExperiences = {
        "Developed various tools and APIs to create and manage AWS / Linode Instances / Volumes / Disks, handle customer migrations, CRUD operations on Cassandra, automatically create Athena Partitions, manage customer events, etc.",
        "Created a Golang library to interact with SaltStack to manage clusters remotely enabling Linode to emulate AWS Opsworks.",
         "Dockerized several projects and migrated them to Kubernetes by creating helm charts and designing Jenkins pipelines to build and deploy images.",
+        "Optimized memory consumption and enhanced Trino query performance by redesigning system architecture.",
         "Leveraged knowledge in Go, Python, REST APIs, Kubernetes, Big Data, Jenkins, Salt, Kafka, Consul, etc."
       ]
     },
