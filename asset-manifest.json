@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.11a70c77.css",
-    "main.js": "/static/js/main.fc6b44b5.js",
+    "main.js": "/static/js/main.ac144346.js",
     "static/css/64.bba8fa55.chunk.css": "/static/css/64.bba8fa55.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/static/css/769.b3cbb36b.chunk.css",
     "static/js/769.ac891433.chunk.js": "/static/js/769.ac891433.chunk.js",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/pesuLogo.png": "/static/media/pesuLogo.5530638846b9a51e76f1.png",
+    "static/media/resume.pdf": "/static/media/resume.d1478e88cb1e22270946.pdf",
     "static/media/nsmilesLogo.png": "/static/media/nsmilesLogo.bdf46175af1940c94c1b.png",
-    "static/media/resume.pdf": "/static/media/resume.9024815451a9d2ea9b9d.pdf",
     "static/media/akamaiLogo.png": "/static/media/akamaiLogo.3443fda1c03bbfc3aca7.png",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/manOnTable.svg": "/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
@@ -22,7 +22,7 @@
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.11a70c77.css.map": "/static/css/main.11a70c77.css.map",
-    "main.fc6b44b5.js.map": "/static/js/main.fc6b44b5.js.map",
+    "main.ac144346.js.map": "/static/js/main.ac144346.js.map",
     "64.bba8fa55.chunk.css.map": "/static/css/64.bba8fa55.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/static/css/769.b3cbb36b.chunk.css.map",
@@ -30,6 +30,6 @@
   },
   "entrypoints": [
     "static/css/main.11a70c77.css",
-    "static/js/main.fc6b44b5.js"
+    "static/js/main.ac144346.js"
   ]
 }
