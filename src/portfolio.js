@@ -123,15 +123,15 @@ const educationInfo = {
     {
       schoolName: "University of Illinois Urbana-Champaign",
       logo: require("./assets/images/uiucLogo.jpg"),
-      subHeader: "Masters in Computer Science                                                                                             GPA :   4.0 / 4.0",
+      subHeader: "Masters in Computer Science                                                                                             GPA :   3.94 / 4.0",
       duration: "January 2024 - May 2025",
       descBullets: [
         "Member of the Association for Computing Machinery (ACM)",
         "Top 5 - Code in the Dark, Hack Illinois 2024",
-        "CS Grad Teaching Assistant for 'Topics in Software Engineering'"
+        "CS Grad Teaching Assistant for 'Topics in Software Engineering' and 'Software Engineering I' with Dr.Darko Marinov"
       ],
       courses: [
-        "Database Systems", "Advanced topics in Software Engineering", "Artificial Intelligence", "Distributed Systems", "Data Mining", "Threat Detection"
+         "Distributed Systems", "Computer Security", "Data Management", "Database Systems", "Advanced topics in Software Engineering", "Data Mining", "Threat Detection",  "Artificial Intelligence"
       ]
     },
     {
@@ -391,3 +391,5 @@ export {
   isHireable,
   resumeSection
 };
+
+// npm run deploy
