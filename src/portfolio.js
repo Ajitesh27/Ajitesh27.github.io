@@ -123,12 +123,13 @@ const educationInfo = {
     {
       schoolName: "University of Illinois Urbana-Champaign",
       logo: require("./assets/images/uiucLogo.jpg"),
-      subHeader: "Masters in Computer Science                                                                                             GPA :   3.94 / 4.0",
+      subHeader: "Masters in Computer Science                                                                                             GPA :   3.92 / 4.0",
       duration: "January 2024 - May 2025",
       descBullets: [
         "Member of the Association for Computing Machinery (ACM)",
         "Top 5 - Code in the Dark, Hack Illinois 2024",
-        "CS Grad Teaching Assistant for 'Topics in Software Engineering' and 'Software Engineering I' with Dr.Darko Marinov"
+        "CS Grad Teaching Assistant for 'Topics in Software Engineering' and 'Software Engineering I' with Dr. Darko Marinov",
+        "Winner of Outstanding Teaching Assistant 2025 Award",
       ],
       courses: [
          "Distributed Systems", "Computer Security", "Data Management", "Database Systems", "Advanced topics in Software Engineering", "Data Mining", "Threat Detection",  "Artificial Intelligence"
@@ -193,14 +194,15 @@ const workExperiences = {
       role: "Software Engineer",
       company: "Akamai Technologies",
       companylogo: require("./assets/images/akamaiLogo.png"),
-      date: "                                    Summer Intern                       May 2024 - Aug 2024 ( 3 Months )                               California, US\n                                 Software Engineer                     July 2022 - Dec 2023 ( 1.5 Years )                                 Bangalore, IN\n                      Software Engineering Intern            Jan 2022 - June 2022 ( 6 Months )                              Bangalore, IN",
+      date: "                                 Software Engineer 2                            Jun 2025 - Present                                                 California, US\n                                     Summer Intern                       May 2024 - Aug 2024 ( 3 Months )                               California, US\n                                 Software Engineer                     July 2022 - Dec 2023 ( 1.5 Years )                                 Bangalore, IN\n                      Software Engineering Intern            Jan 2022 - June 2022 ( 6 Months )                              Bangalore, IN",
       descBullets: [
+        "Creating AI agents and a unified platform for users to build and deploy their agents.",
        "Developed a new version of a product ( Kafka -> S3 ) that reduced memory usage by 50% and increased throughput by 12 times.",
        "Developed various tools and APIs to create and manage AWS / Linode Instances / Volumes / Disks, handle customer migrations, CRUD operations on Cassandra, automatically create Athena Partitions, manage customer events, etc.",
        "Created a Golang library to interact with SaltStack to manage clusters remotely enabling Linode to emulate AWS Opsworks.",
         "Dockerized several projects and migrated them to Kubernetes by creating helm charts and designing Jenkins pipelines to build and deploy images.",
         "Optimized memory consumption and enhanced Trino query performance by redesigning system architecture.",
-        "Leveraged knowledge in Go, Python, REST APIs, Kubernetes, Big Data, Jenkins, Salt, Kafka, Consul, etc."
+        "Leveraged knowledge in Go, Python, AI Agents, REST APIs, Kubernetes, Big Data, Jenkins, Salt, Kafka, Consul, etc."
       ]
     },
     {
